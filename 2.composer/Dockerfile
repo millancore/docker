@@ -1,4 +1,4 @@
-FROM composer:1.9 AS build
+FROM composer:2 AS build
 
 #compiamos nuestra app al contenedor builder (composer)
 COPY . /app
@@ -8,7 +8,7 @@ RUN cd /app && composer install --no-dev
 
 # ----------
 
-FROM php:7.3-apache
+FROM php:8.3-apache
 
 # Copiamos desde build (composer)
 COPY --from=build /app /var/www/html
