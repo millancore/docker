@@ -1,4 +1,4 @@
-# Slim Framework 4 Skeleton Application
+# Docker build Images
 
 ### Build Imagen
 
