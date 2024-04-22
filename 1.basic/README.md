@@ -20,6 +20,8 @@ docker run --rm -d --name myapp `
 --network mynet -p 80:80 `
 -v $pwd/var/www/html <user>/<imageName>:<version>
 ``` 
+
+
 ## Linux multi-line command ( \ )
 
 ```

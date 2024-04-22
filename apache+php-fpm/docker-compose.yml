@@ -9,6 +9,6 @@ services:
     volumes: 
       - ./src:/var/www/html
   php-fpm:
-    image: php:7.4-fpm-alpine
+    image: php:8.3-fpm-alpine
     volumes: 
       - ./src:/var/www/html

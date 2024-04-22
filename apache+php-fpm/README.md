@@ -39,7 +39,7 @@ Windows multi-line Powershell
 ```
 docker run --rm -d --name php-fpm `
 --network mynet -v $pwd/src:/var/www/html `
-php:7.4-fpm-alpine
+php:8.3-fpm-alpine
 ```
 
 Linux multi-line
@@ -47,5 +47,5 @@ Linux multi-line
 ```
 docker run --rm -d --name php-fpm / 
 --network mynet -v $pwd/src:/var/www/html /
-php:7.4-fpm-alpine
+php:8.3-fpm-alpine
 ```
