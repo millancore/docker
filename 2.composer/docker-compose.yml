@@ -1,8 +1,10 @@
 version: '3'
 services: 
   web:
-    build: .
+    build:
+      dockerfile: ./test.Dockerfile
     ports: 
       - "80:80"
+      - "9000:9000"
     volumes: 
       - ./logs:/var/www/html/logs
